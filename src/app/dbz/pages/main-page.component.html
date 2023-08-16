@@ -1,0 +1,34 @@
+<h1>DBZ Personajes</h1>
+<hr>
+<div class="row">
+  <div class="col">
+
+  <dbz-list [characterList]="characters" (onDelete)="onDeleteCharacter($event)"></dbz-list>
+
+</div>
+<div class="col">
+
+
+
+  <dbz-add-character (onNewCharacter)="onNewCharacter($event)"></dbz-add-character>
+  </div>
+</div>
+
+
+
+
+
+<!-- <h1>DBZ Main Pageaaaaaaaaaaaaaaaaaaaaaaa</h1>
+<h1>HOOOOOOOOOOOOOOOOOOOOOOLA</h1>
+<hr>
+<div class="row">
+  <div class="col">
+
+  </div>
+</div>
+<form (ngSubmit)="validarDNI()">
+  <label for="dni">Introduce tu DNI:</label>
+  <input type="text" [(ngModel)]="dni" name="dni" required>
+  <button type="submit">Validar</button>
+</form>
+<p>{{ resultado }}</p> -->
